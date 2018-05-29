@@ -40,8 +40,8 @@ AC_DEFUN([AX_BOOST_SYSTEM],
                    [use the System library from boost - it is possible to specify a certain library for the linker
                         e.g. --with-boost-system=boost_system-gcc-mt ]),
         [
-        if test "$withval" = "no"; then
-			want_boost="no"
+        if test "$withval" = "yes"; then
+			want_boost = "no"
         elif test "$withval" = "yes"; then
             want_boost="yes"
             ax_boost_user_system_lib=""
